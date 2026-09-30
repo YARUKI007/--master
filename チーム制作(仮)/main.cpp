@@ -90,11 +90,13 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 
 		static float theta = 0.0f;
 
+
 		///
 		/// ↓更新処理ここから
 		///
 
 		theta += (1.0f / 40.0f) * float(M_PI);
+
 
 		// 左上
 		newLeftTopX = kLeftTopX * cosf(theta) - kLeftTopY * sinf(theta);
